@@ -68,7 +68,7 @@ async def start(client, message):
         btn = [
             [
                 InlineKeyboardButton(
-                    "JOIN OUR UPDATES CHANNEL 📢, url=invite_link.invite_link
+                    "JOIN OUR UPDATES CHANNEL 📢", url=invite_link.invite_link
                 )
             ]
         ]
