@@ -26,7 +26,7 @@ async def deletemultiplemedia(bot, message):
         '_id': file_id,
     })
     if result.deleted_count:
-        logger.info('File is successfully deleted from database.')
+        logger.info('File is successfully deleted from database 🚮')
     else:
         file_name = re.sub(r"(_|\-|\.|\+)", " ", str(media.file_name))
         result = await Media.collection.delete_many({
