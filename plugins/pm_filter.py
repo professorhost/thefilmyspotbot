@@ -901,11 +901,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
                     InlineKeyboardButton('➕ Add Bot To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton('Help ℹ️', callback_data='help'),
-                    InlineKeyboardButton('About 😊🖖🏻', callback_data='about'),
                     InlineKeyboardButton('Search Here 🔍👀', switch_inline_query_current_chat='')
                 ],[
-                    InlineKeyboardButton('Join Our ReQuesting Group ✅', url=GRP_LNK)
+                    InlineKeyboardButton('Help ℹ️', callback_data='help'),
+                    InlineKeyboardButton('About 😊🖖🏻', callback_data='about')
+                ],[ 
+                    InlineKeyboardButton('𝐭𝐡𝐞𝐟𝐢𝐥𝐦𝐲𝐬𝐩𝐨𝐭 💎', url=GRP_LNK)
                   ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
