@@ -8,5 +8,7 @@ else
 fi
 cd /thefilmyspotbot
 pip3 install -U -r requirements.txt
-echo "Starting ThefilmyspotBot...."
+
+echo "Starting ThefilmyspotBot ✅...."
+
 python3 bot.py
