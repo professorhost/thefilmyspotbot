@@ -2,12 +2,14 @@
   <img src="https://telegra.ph/file/075948dea539e8ceecf87.jpg" alt="𝐭𝐡𝐞𝐟𝐢𝐥𝐦𝐲𝐬𝐩𝐨𝐭">
 </p>
 <h1 align="center">
+
   𝐭𝐡𝐞𝐟𝐢𝐥𝐦𝐲𝐬𝐩𝐨𝐭 
 </h1>
 </p>
 
 
 <a href="https://github.com/abhinand2608/thefilmyspotbot/blob/master/LICENSE"> <img src="https://img.shields.io/badge/License- GPL 2.0 license -blueviolet?style=for-the-badge" alt="License" /> </a>
+
 <a href="https://www.python.org/"> <img src="https://img.shields.io/badge/Written%20in-Python-skyblue?style=for-the-badge&logo=python" alt="Python" /> </a>
 <a href="https://pypi.org/project/Pyrogram/"> <img src="https://img.shields.io/pypi/v/pyrogram?color=white&label=pyrogram&logo=python&logoColor=blue&style=for-the-badge" /></a>
 
@@ -49,6 +51,7 @@
 - [x] 𝐹𝑖𝑙𝑒 𝑆𝑡𝑜𝑟𝑒
 - [x] 𝐴𝑢𝑡𝑜 𝐷𝑒𝑙𝑒𝑡𝑒
 - [x] 𝐴𝑛𝑑 𝑀𝑜𝑟𝑒...
+
 
 
 ## 𝐶𝑜𝑚𝑚𝑎𝑛𝑑𝑠
@@ -131,6 +134,7 @@
 <details><summary>Deploy To Koyeb</summary>
 <b>The fastest way to deploy the application is to click the Deploy to Koyeb button below.</b>
 
+
 [![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/abhinand2608/thefilmyspotbot&branch=koyeb&name=𝐭𝐡𝐞𝐟𝐢𝐥𝐦𝐲𝐬𝐩𝐨𝐭)
 </details>
 
@@ -147,6 +151,7 @@
   <img src="https://okteto.com/develop-okteto.svg" alt="Deploy to Okteto">
 </a>
 </p>
+
 </details>
 
 <details><summary>Deploy To VPS</summary>
