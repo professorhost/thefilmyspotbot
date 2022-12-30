@@ -172,17 +172,18 @@ For admin support type @admins with your message and the bot will forward the me
 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b>"""
 
     CAPTION = """
-<b>📂 Fɪʟᴇ ɴᴀᴍᴇ : </b> <code>{file_name}</code>
+<b>📂</b> <code>{file_name}</code>
 
 <b>
 ╭─────── • ◆ • ───────╮
-🔅 Dᴀʀᴋ Mᴏᴅᴇ :  <a href="https://t.me/addtheme/">Tᴏᴜᴄʜ</a>
+🔅<a href="https://t.me/+8lZE1YYLDqdjZTc1">➠ Join 𝐭𝐡𝐞𝐟𝐢𝐥𝐦𝐲𝐬𝐩𝐨𝐭 💎 For All Movies & Series Files </a>
 ╰─────── • ◆ • ───────╯
 
-=========== • ✠ • ===========
-▫️ ᴄʜᴀɴɴᴇʟ : @thefilmyspotupdates
-▫️ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ : @thefilmyspot
-=========== • ✠ • ===========</b>"""
+======== • ✠ • ========
+📌 Note : We Only Share contents that are Already on Telegram . 
+So If You Have Any Issues With These Files, 
+Then We aren't Responsible for That ❗
+======== • ✠ • ========</b>"""
 
     IMDB_TEMPLATE_TXT = """
 <b>Query: {query}
