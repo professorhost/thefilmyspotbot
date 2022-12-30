@@ -176,14 +176,17 @@ For admin support type @admins with your message and the bot will forward the me
 
 <b>
 ╭─────── • ◆ • ───────╮
-🔅<a href="https://t.me/+8lZE1YYLDqdjZTc1">➠ Join 𝐭𝐡𝐞𝐟𝐢𝐥𝐦𝐲𝐬𝐩𝐨𝐭 💎 For All Movies & Series Files </a>
+➠ <a href="https://t.me/+8lZE1YYLDqdjZTc1">Join 𝐭𝐡𝐞𝐟𝐢𝐥𝐦𝐲𝐬𝐩𝐨𝐭 💎 
+For All Movies & Series Files ✅ </a>
 ╰─────── • ◆ • ───────╯
 
-======== • ✠ • ========
+========= • ✠ • =========
+
 📌 Note : We Only Share contents that are Already on Telegram . 
 So If You Have Any Issues With These Files, 
 Then We aren't Responsible for That ❗
-======== • ✠ • ========</b>"""
+
+========= • ✠ • =========</b>"""
 
     IMDB_TEMPLATE_TXT = """
 <b>Query: {query}
