@@ -28,7 +28,7 @@ async def start(client, message):
                     InlineKeyboardButton('About 😊🖖🏻', callback_data='about'),
                     InlineKeyboardButton('Search Here 🔍👀', switch_inline_query_current_chat='')
                 ],[
-                    InlineKeyboardButton('Join Our ReQuesting Group ✅', url=GRP_LNK)
+                    InlineKeyboardButton('𝐭𝐡𝐞𝐟𝐢𝐥𝐦𝐲𝐬𝐩𝐨𝐭 💎', url=GRP_LNK)
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply(script.START_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup)
@@ -49,7 +49,7 @@ async def start(client, message):
                     InlineKeyboardButton('About 😊🖖🏻', callback_data='about'),
                     InlineKeyboardButton('Search Here 🔍👀', switch_inline_query_current_chat='')
                 ],[
-                    InlineKeyboardButton('Join Our ReQuesting Group ✅', url=GRP_LNK)
+                    InlineKeyboardButton('𝐭𝐡𝐞𝐟𝐢𝐥𝐦𝐲𝐬𝐩𝐨𝐭 💎', url=GRP_LNK)
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -95,7 +95,7 @@ async def start(client, message):
                     InlineKeyboardButton('About 😊🖖🏻', callback_data='about'),
                     InlineKeyboardButton('Search Here 🔍👀', switch_inline_query_current_chat='')
                 ],[
-                    InlineKeyboardButton('Join Our ReQuesting Group ✅', url=GRP_LNK)
+                    InlineKeyboardButton('𝐭𝐡𝐞𝐟𝐢𝐥𝐦𝐲𝐬𝐩𝐨𝐭 💎', url=GRP_LNK)
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
