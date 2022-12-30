@@ -25,7 +25,8 @@ async def start(client, message):
                     InlineKeyboardButton('➕ Add Bot To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
                     InlineKeyboardButton('Help ℹ️', callback_data='help'),
-                    InlineKeyboardButton('About 😊🖖🏻', callback_data='about'),
+                    InlineKeyboardButton('About 😊🖖🏻', callback_data='about')
+                ],[
                     InlineKeyboardButton('Search Here 🔍👀', switch_inline_query_current_chat='')
                 ],[
                     InlineKeyboardButton('𝐭𝐡𝐞𝐟𝐢𝐥𝐦𝐲𝐬𝐩𝐨𝐭 💎', url=GRP_LNK)
@@ -46,7 +47,8 @@ async def start(client, message):
                     InlineKeyboardButton('➕ Add Bot To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
                     InlineKeyboardButton('Help ℹ️', callback_data='help'),
-                    InlineKeyboardButton('About 😊🖖🏻', callback_data='about'),
+                    InlineKeyboardButton('About 😊🖖🏻', callback_data='about')
+                ],[
                     InlineKeyboardButton('Search Here 🔍👀', switch_inline_query_current_chat='')
                 ],[
                     InlineKeyboardButton('𝐭𝐡𝐞𝐟𝐢𝐥𝐦𝐲𝐬𝐩𝐨𝐭 💎', url=GRP_LNK)
@@ -92,7 +94,8 @@ async def start(client, message):
                     InlineKeyboardButton('➕ Add Bot To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
                     InlineKeyboardButton('Help ℹ️', callback_data='help'),
-                    InlineKeyboardButton('About 😊🖖🏻', callback_data='about'),
+                    InlineKeyboardButton('About 😊🖖🏻', callback_data='about')
+                ],[
                     InlineKeyboardButton('Search Here 🔍👀', switch_inline_query_current_chat='')
                 ],[
                     InlineKeyboardButton('𝐭𝐡𝐞𝐟𝐢𝐥𝐦𝐲𝐬𝐩𝐨𝐭 💎', url=GRP_LNK)
