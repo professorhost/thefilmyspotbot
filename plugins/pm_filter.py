@@ -857,10 +857,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
         else:
             await query.answer("Yᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ THE ʀɪɢᴛs ᴛᴏ ᴅᴏ ᴛʜɪs !", show_alert=True)
  
-    elif query.data == "predvd":
-        k = await client.send_message(chat_id=query.message.chat.id, text="<b>Deleting PreDVDs... Please wait...</b>")
+    elif query.data == "sample":
+        k = await client.send_message(chat_id=query.message.chat.id, text="<b>Deleting Samples... Please wait...</b>")
         files, next_offset, total = await get_bad_files(
-                                                  'predvd',
+                                                  'sample',
                                                   offset=0)
         deleted = 0
         for file in files:
@@ -869,15 +869,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 '_id': file_ids,
             })
             if result.deleted_count:
-                logger.info('PreDVD File Found ! Successfully deleted from database.')
+                logger.info('Sample File Found ! Successfully deleted from database.')
             deleted+=1
         deleted = str(deleted)
-        await k.edit_text(text=f"<b>Successfully deleted {deleted} PreDVD files.</b>")
+        await k.edit_text(text=f"<b>Successfully deleted {deleted} Sample files.</b>")
 
-    elif query.data == "camrip":
-        k = await client.send_message(chat_id=query.message.chat.id, text="<b>Deleting CamRips... Please wait...</b>")
+    elif query.data == "predvdrip":
+        k = await client.send_message(chat_id=query.message.chat.id, text="<b>Deleting Predvdrip... Please wait...</b>")
         files, next_offset, total = await get_bad_files(
-                                                  'camrip',
+                                                  'predvdrip',
                                                   offset=0)
         deleted = 0
         for file in files:
@@ -886,10 +886,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 '_id': file_ids,
             })
             if result.deleted_count:
-                logger.info('CamRip File Found ! Successfully deleted from database.')
+                logger.info('Predvdrip File Found ! Successfully deleted from database.')
             deleted+=1
         deleted = str(deleted)
-        await k.edit_text(text=f"<b>Successfully deleted {deleted} CamRip files.</b>")
+        await k.edit_text(text=f"<b>Successfully deleted {deleted} predvdrip files.</b>")
 
     elif query.data == "reqinfo":
         await query.answer(text=script.REQINFO, show_alert=True)
