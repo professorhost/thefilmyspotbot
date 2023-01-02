@@ -860,7 +860,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "hdts":
         k = await client.send_message(chat_id=query.message.chat.id, text="<b>Deleting Hdts... Please wait...</b>")
         files, next_offset, total = await get_bad_files(
-                                                  'hdts',
+                                                  'hd-ts',
                                                   offset=0)
         deleted = 0
         for file in files:
@@ -877,7 +877,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "predvdrip":
         k = await client.send_message(chat_id=query.message.chat.id, text="<b>Deleting pre-dvdrip... Please wait...</b>")
         files, next_offset, total = await get_bad_files(
-                                                  'pre-dvdrip',
+                                                  'hdtc',
                                                   offset=0)
         deleted = 0
         for file in files:
