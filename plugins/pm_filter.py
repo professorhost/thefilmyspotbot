@@ -63,7 +63,7 @@ async def pm_text(bot, message):
     if user_id in ADMINS: return # ignore admins
     await message.reply_text("<b>Yᴏᴜʀ ᴍᴇssᴀɢᴇ ʜᴀs ʙᴇᴇɴ sᴇɴᴛ ᴛᴏ ᴍʏ ADMINS !</b>")
     await bot.send_message(
-        chat_id=REQST_CHANNEL_ID,
+        chat_id=REQST_CHANNEL,
         text=f"<b>#𝐏𝐌_𝐌𝐒𝐆\n\nNᴀᴍᴇ : {user}\n\nID : {user_id}\n\nMᴇssᴀɢᴇ : {content}</b>"
     )
 
@@ -270,7 +270,7 @@ async def advantage_spoll_choker(bot, query):
         else:
             reqstr1 = query.from_user.id if query.from_user else 0
             reqstr = await bot.get_users(reqstr1)
-            await bot.send_message(chat_id=REQST_CHANNEL_ID, text=(script.NORSLTS.format(reqstr.id, reqstr.mention, movie)))
+            await bot.send_message(chat_id=REQST_CHANNEL, text=(script.NORSLTS.format(reqstr.id, reqstr.mention, movie)))
             k = await query.message.edit(script.MVE_NT_FND)
             await asyncio.sleep(10)
             await k.delete()
@@ -1264,7 +1264,7 @@ async def auto_filter(client, msg, spoll=False):
                 if settings["spell_check"]:
                     return await advantage_spell_chok(client, msg)
                 else:
-                    await client.send_message(chat_id=REQST_CHANNEL_ID, text=(script.NORSLTS.format(reqstr.id, reqstr.mention, search)))
+                    await client.send_message(chat_id=REQST_CHANNEL, text=(script.NORSLTS.format(reqstr.id, reqstr.mention, search)))
                     return
         else:
             return
@@ -1517,7 +1517,7 @@ async def advantage_spell_chok(client, msg): #modified spell check
         button = [[
                    InlineKeyboardButton("Gᴏᴏɢʟᴇ", url=f"https://www.google.com/search?q={reqst_gle}")
         ]]
-        await client.send_message(chat_id=REQST_CHANNEL_ID, text=(script.NORSLTS.format(reqstr.id, reqstr.mention, mv_rqst)))
+        await client.send_message(chat_id=REQST_CHANNEL, text=(script.NORSLTS.format(reqstr.id, reqstr.mention, mv_rqst)))
         k = await msg.reply_photo(
             photo=SPELL_IMG, 
             caption=script.I_CUDNT.format(mv_rqst),
