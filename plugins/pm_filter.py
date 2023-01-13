@@ -11,7 +11,7 @@ import pyrogram
 from database.connections_mdb import active_connection, all_connections, delete_connection, if_active, make_active, \
     make_inactive
 from info import ADMINS, AUTH_CHANNEL, AUTH_USERS, SUPPORT_CHAT_ID, CUSTOM_FILE_CAPTION, MSG_ALRT, PICS, AUTH_GROUPS, P_TTI_SHOW_OFF, GRP_LNK, CHNL_LNK, NOR_IMG, LOG_CHANNEL, SPELL_IMG, MAX_B_TN, IMDB, \
-    SINGLE_BUTTON, SPELL_CHECK_REPLY, IMDB_TEMPLATE, REQST_CHANNEL_ID
+    SINGLE_BUTTON, SPELL_CHECK_REPLY, IMDB_TEMPLATE, REQST_CHANNEL
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery, InputMediaPhoto
 from pyrogram import Client, filters, enums
 from pyrogram.errors import FloodWait, UserIsBlocked, MessageNotModified, PeerIdInvalid
@@ -857,39 +857,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
         else:
             await query.answer("Yᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ THE ʀɪɢᴛs ᴛᴏ ᴅᴏ ᴛʜɪs !", show_alert=True)
  
-    elif query.data == "hdts":
-        k = await client.send_message(chat_id=query.message.chat.id, text="<b>Deleting Hdts... Please wait...</b>")
-        files, next_offset, total = await get_bad_files(
-                                                  'hd-ts',
-                                                  offset=0)
-        deleted = 0
-        for file in files:
-            file_ids = file.file_id
-            result = await Media.collection.delete_one({
-                '_id': file_ids,
-            })
-            if result.deleted_count:
-                logger.info('hdts File Found ! Successfully deleted from database.')
-            deleted+=1
-        deleted = str(deleted)
-        await k.edit_text(text=f"<b>Successfully deleted {deleted} hdts files.</b>")
-
-    elif query.data == "predvdrip":
-        k = await client.send_message(chat_id=query.message.chat.id, text="<b>Deleting pre-dvdrip... Please wait...</b>")
-        files, next_offset, total = await get_bad_files(
-                                                  'hdtc',
-                                                  offset=0)
-        deleted = 0
-        for file in files:
-            file_ids = file.file_id
-            result = await Media.collection.delete_one({
-                '_id': file_ids,
-            })
-            if result.deleted_count:
-                logger.info('predvdrip File Found ! Successfully deleted from database.')
-            deleted+=1
-        deleted = str(deleted)
-        await k.edit_text(text=f"<b>Successfully deleted {deleted} predvdrip files.</b>")
 
     elif query.data == "reqinfo":
         await query.answer(text=script.REQINFO, show_alert=True)
