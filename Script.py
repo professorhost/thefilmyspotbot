@@ -191,13 +191,25 @@ Then We aren't Responsible for That ❗
 ========= • ✠ • =========</b>"""
 
     IMDB_TEMPLATE_TXT = """
-<b>Query: {query}
-IMDb Data:
+✿ <b>🏷 Title</b>: <a href={url}>{title}</a>
 
-🏷 Title: <a href={url}>{title}</a>
-🎭 Genres: {genres}
-📆 Year: <a href={url}/releaseinfo>{year}</a>
-🌟 Rating: <a href={url}/ratings>{rating}</a> / 10</b>"""
+✿ 📆 Year: <a href={url}/release_date>{year}</a>  | ⏳ {runtime} Min
+
+✿ 🎭 Genres: {genres}
+
+✿ 🌟 Rating: <a href={url}/ratings>{rating} / 10</a> 
+
+✿ 🎙️ Languages : <code>{languages}</code>
+
+✿ ▶️ : <a href={url}/box_office>{kind}</a> | Seasons 👀: {seasons}
+
+✿ 👥 Cast : <code>{cast}</code>
+
+✿ 📖 Storyline : {plot}
+
+ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ ⊹ 
+
+Requested by : {message.from_user.mention} 🌝"""
     
     ALL_FILTERS = """
 <b>Hᴇʏ {}, Tʜᴇsᴇ ᴀʀᴇ ᴍʏ ᴛʜʀᴇᴇ ᴛʏᴘᴇs ᴏғ ғɪʟᴛᴇʀs.</b>"""
